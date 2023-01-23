@@ -142,6 +142,7 @@ ro.crypto.volume.options=::v2
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Display calibration
 ro.vendor.display.sensortype=2
