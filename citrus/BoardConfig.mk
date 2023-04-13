@@ -13,7 +13,6 @@ include device/xiaomi/chime/BoardConfig-chime.mk
 TARGET_OTA_ASSERT_DEVICE := citrus,chime,juice
 
 # Kernel - Prebuilt images
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/images/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/images/dtbo.img
