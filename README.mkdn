@@ -1,9 +1,6 @@
-> Copyright (C) 2022 The LineageOS Project
+## Copyrights
 
-Unified Device Tree for Redmi 9T/9 Power/Note 9 4G/POCO M3 (chime)
-===========================================
-
-The Redmi 9T/9 Power/Note 9 4G is a budget smartphone from Redmi, Released 2021, January 18
+>Copyright (C) 2022-2023 Derpfest AOSP  
 
 ## Device specifications
 
@@ -22,3 +19,7 @@ Rear Camera Features | LED flash, HDR, panorama
 Video	| 1080p@30fps	
 Camera (Front)  | 8 MP, f/2.1, 27mm (wide), 1/4.0", 1.12µm
 Features| Fingerprint (side-mounted), accelerometer, proximity, compass
+
+## Supported devices
+- Redmi 9T/9T NFC/9 Power/Note 9 4G (lime)
+- POCO M3 (citrus)

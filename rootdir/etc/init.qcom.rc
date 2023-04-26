@@ -475,6 +475,9 @@ on property:sys.boot_completed=1
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
+    # This initializes vendor.qti.hardware.perf service
+    setprop vendor.post_boot.parsed 1
+
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
@@ -1080,3 +1083,11 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
